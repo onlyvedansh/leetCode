@@ -1,1 +1,21 @@
-Leet Code Probs
+import java.util.*;
+
+class Solution {
+    public static boolean isP(int x)
+     {
+       String num = String.valueOf(x); 
+       int len=num.length();
+           if (num.charAt(0)==num.charAt(len-1))
+           {
+                return true; 
+           }
+           
+        return false;
+     }
+public static void main(String[]args)
+{
+    Scanner sc = new Scanner(System.in);
+    int x=sc.nextInt(); boolean sol=isP(x);
+    System.out.println(sol);   
+}
+}
